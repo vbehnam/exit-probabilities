@@ -1,9 +1,11 @@
 # exit-probabilities
 Given two arbitrary “exit probabilities”, this function finds the probability of hitting one of the two exits at every possible starting point, for a one-dimensional random walk.
 
-Make sure for all the arguments you input the values of the vectors correctly. Left, right (and if it exists, staying put). For p, make sure you specify a probability for staying put, even if it is 0. i.e. just input p = [q, 1-q, 0]. Otherwise the function will return an error message.
+Make sure for all the arguments you input the values of the vectors correctly. Particularly for p, make sure you specify a probability for staying put, even if it is 0. i.e. just input p = [q, 1-q, 0]. Otherwise the function will return an error message.
 
 For large values of (exit[1]-exit[0]), there may not be enough memory to compute these probabilities.
+
+The output is a Nx1 vector which returns the probability that at starting position Sn, the random walk hits the specified boundary t.
 
 ## Example
 
