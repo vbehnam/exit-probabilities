@@ -37,7 +37,7 @@ def exit_prob(p, dist, exit, t):
         exit[1] = exit[0]
         exit[0] = temp
 
-    # if exit[1] == exit[2] then we are already trivially at the boundary
+    # if exit[0] == exit[1] then we are already trivially at the boundary
     if exit[0] == exit[1]:
         return 0
 
