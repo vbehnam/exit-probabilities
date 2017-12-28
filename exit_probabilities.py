@@ -1,13 +1,6 @@
 import numpy as np
 import numpy.matlib
 
-def main():
-    p = [1/4, 2/4, 1/4]
-    dist = [1, 1]
-    exitp = [0, 100]
-    t = 100
-    exit_prob(p, dist, exitp, t)
-
 # parameters: p is a vector of three values, each signifying the probability of moving left, right and staying in the same spot respectively
 # dist is a vector of two values, signifying the distance that each particle moves left and right respectively. make sure the order matches p!!!
 # exitp is vector of two values, signifying where the particle stops moving (or exits). The lower value should be exitp[0]
@@ -75,7 +68,7 @@ def exit_prob(p, dist, exitp, t):
 
 
     for i in range(dist[0], n-dist[1]):
-        c[i,i] = 1-p[2]
+        c[i, i] = 1-p[2]
         c[i, i-1] = -p[0]
         c[i, i+1] = -p[1]
 
@@ -104,7 +97,3 @@ class ExitMismatch(Exception):
 
 class ProbabilityError(Exception):
     pass
-
-
-if __name__ == '__main__':
-    main()
