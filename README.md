@@ -3,7 +3,7 @@ Given a vector of probabilities, a vector of the length moved at each step, two 
 
 Make sure for all the arguments you input the values of the vectors correctly. Particularly for p, make sure you specify a probability for staying put, even if it is 0. i.e. if z is a probability, then just input p = [z, 1-z, 0]. Otherwise, if you do not input the other values, the function will return an error message.
 
-Since python is not ideal for dealing with matrices, the program might not be able to compute for large values of (exit[1]-exit[0]).
+The runtime of this algorithm is O(n^3), where nxn is the dimension of the square c matrix, since inverting a matrix takes O(n^3) time. Hence, the program might not be able to compute for large values of (exit[1]-exit[0]).
 
 The output is a Nx1 vector which returns the probability that at starting position Sn, the random walk hits the specified boundary t.
 
