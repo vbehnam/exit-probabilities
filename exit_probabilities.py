@@ -3,7 +3,7 @@ import numpy.matlib
 
 # parameters: p is a vector of three values, each signifying the probability of moving left, right and staying in the same spot respectively
 # dist is a vector of two values, signifying the distance that each particle moves left and right respectively.
-# make sure the order matches p!!!
+# make sure the order of dist matches p!!!
 # exitp is vector of two values, signifying where the particle stops moving (or exits). The lower value should be exitp[0]
 # t is the exit you are interested in. It must be equal to one of the two values in exitp
 
